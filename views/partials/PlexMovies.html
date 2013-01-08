@@ -1,0 +1,19 @@
+<div class="container-fluid">
+	<div class="row-fluid" align="center">
+		<div class="span12">
+			<input type="text" ng-model="search" class="input-medium search-query" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<ul class="thumbnails">
+				<li ng-repeat="movie in movies | filter:search" class="span3">
+					<div onclick="playMovie('{{movie.PlayURL}}', '{{serverIp}}', '{{playerIp}}')">
+						<img src="http://{{serverIp}}:32400{{movie.Thumb}}" width="200" height="250">
+						<h3>{{movie.Name}}</h3>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

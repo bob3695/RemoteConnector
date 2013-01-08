@@ -1,0 +1,22 @@
+<div class="container-fluid">
+	<div class="row-fluid" align="center">
+		<div class="span2">
+			<a href="#/plex/tvshows/{{serverIp}}/{{playerIp}}/{{sectionName}}">Back</a>
+		</div>
+		<div class="span10">
+			<input type="text" ng-model="search" class="input-medium search-query" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<ul class="thumbnails">
+				<li ng-repeat="season in seasons | filter:search" class="span4">
+					<a class="thumbnail" href="#/plex/tvshows/Episodes/{{season.Key}}">
+						<img src="http://{{serverIp}}:32400{{season.Thumb}}">
+						<h3>{{season.Name}}</h3>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

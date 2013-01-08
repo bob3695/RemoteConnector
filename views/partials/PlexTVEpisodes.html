@@ -1,0 +1,22 @@
+<div class="container-fluid">
+	<div class="row-fluid" align="center">
+		<div class="span2">
+			<a href="#/plex/tvshows/Seasons/{{showKey}}">Back</a>
+		</div>
+		<div class="span10">
+			<input type="text" ng-model="search" class="input-medium search-query" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<ul class="thumbnails">
+				<li ng-repeat="episode in episodes | filter:search" class="span4">
+					<a class="thumbnail" onclick="playMovie('{{episode.PlayURL}}', '{{serverIp}}', '{{playerIp}}')">
+						<img src="http://{{serverIp}}:32400{{episode.Thumb}}">
+						<h3>{{episode.Name}}</h3>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
