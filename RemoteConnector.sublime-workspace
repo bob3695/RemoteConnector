@@ -124,34 +124,10 @@
 	"buffers":
 	[
 		{
-			"file": "routes/index.js",
+			"file": "views/index.html",
 			"settings":
 			{
-				"buffer_size": 197,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app.js",
-			"settings":
-			{
-				"buffer_size": 1421,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/remoteState.js",
-			"settings":
-			{
-				"buffer_size": 201,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/app.js",
-			"settings":
-			{
-				"buffer_size": 1188,
+				"buffer_size": 879,
 				"line_ending": "Unix"
 			}
 		},
@@ -159,31 +135,23 @@
 			"file": "views/partials/PlexMovies.html",
 			"settings":
 			{
-				"buffer_size": 575,
+				"buffer_size": 303,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "package.json",
+			"file": "views/partials/PlexMoviesHoriz.html",
 			"settings":
 			{
-				"buffer_size": 183,
+				"buffer_size": 224,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "{\n	\"results\":[\n	{\n		\"locations\":[\n		{\n			\"latLng\":\n			{\n				\"lng\":-76.728104,\n				\"lat\":39.962502\n			},\n			\"adminArea4\":\"York County\",\n			\"adminArea5Type\":\"City\",\n			\"adminArea4Type\":\"County\",\n			\"adminArea5\":\"York\",\n			\"street\":\"\",\n			\"adminArea1\":\"US\",\n			\"adminArea3\":\"PA\",\n			\"type\":\"s\",\n			\"displayLatLng\":\n			{\n				\"lng\":-76.728104,\n				\"lat\":39.962502\n			},\n			\"linkId\":0,\n			\"postalCode\":\"\",\n			\"sideOfStreet\":\"N\",\n			\"dragPoint\":false,\n			\"adminArea1Type\":\"Country\",\n			\"geocodeQuality\":\"CITY\",\n			\"geocodeQualityCode\":\"A5XAX\",\n			\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-1,39.962502,-76.728104,0,0|&center=39.962502,-76.728104&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\n			\"adminArea3Type\":\"State\"\n		}],\n		\"providedLocation\":\n		{\n			\"location\":\"York,PA\"\n		}\n	},\n	{\n		\"locations\":[\n		{\n			\"latLng\":\n			{\n				\"lng\":-76.606102,\n				\"lat\":39.900799\n			},\n			\"adminArea4\":\"York County\",\n			\"adminArea5Type\":\"City\",\n			\"adminArea4Type\":\"County\",\n			\"adminArea5\":\"Red Lion\",\n			\"street\":\"\",\n			\"adminArea1\":\"US\",\n			\"adminArea3\":\"PA\",\n			\"type\":\"s\",\n			\"displayLatLng\":\n			{\n				\"lng\":-76.606102,\n				\"lat\":39.900799\n			},\n			\"linkId\":0,\n			\"postalCode\":\"\",\n			\"sideOfStreet\":\"N\",\n			\"dragPoint\":false,\n			\"adminArea1Type\":\"Country\",\n			\"geocodeQuality\":\"CITY\",\n			\"geocodeQualityCode\":\"A5XAX\",\n			\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-1,39.900799,-76.606102,0,0|&center=39.900799,-76.606102&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\n			\"adminArea3Type\":\"State\"\n		},\n		{\n			\"latLng\":\n			{\n				\"lng\":-84.249702,\n				\"lat\":39.491402\n			},\n			\"adminArea4\":\"Warren County\",\n			\"adminArea5Type\":\"City\",\n			\"adminArea4Type\":\"County\",\n			\"adminArea5\":\"Red Lion\",\n			\"street\":\"\",\n			\"adminArea1\":\"US\",\n			\"adminArea3\":\"OH\",\n			\"type\":\"s\",\n			\"displayLatLng\":\n			{\n				\"lng\":-84.249702,\n				\"lat\":39.491402\n			},\n			\"linkId\":0,\n			\"postalCode\":\"\",\n			\"sideOfStreet\":\"N\",\n			\"dragPoint\":false,\n			\"adminArea1Type\":\"Country\",\n			\"geocodeQuality\":\"CITY\",\n			\"geocodeQualityCode\":\"A5XAX\",\n			\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-2,39.491402,-84.249702,0,0|&center=39.491402,-84.249702&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"},{\"latLng\":{\"lng\":-102.676399,\"lat\":40.891701},\"adminArea4\":\"Logan County\",\"adminArea5Type\":\"City\",\"adminArea4Type\":\"County\",\"adminArea5\":\"Red Lion\",\"street\":\"\",\"adminArea1\":\"US\",\"adminArea3\":\"CO\",\"type\":\"s\",\"displayLatLng\":{\"lng\":-102.676399,\"lat\":40.891701},\"linkId\":0,\"postalCode\":\"\",\"sideOfStreet\":\"N\",\"dragPoint\":false,\"adminArea1Type\":\"Country\",\"geocodeQuality\":\"CITY\",\"geocodeQualityCode\":\"A5XAX\",\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-3,40.891701,-102.676399,0,0|&center=40.891701,-102.676399&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"},{\"latLng\":{\"lng\":-75.6642,\"lat\":39.608299},\"adminArea4\":\"New Castle County\",\"adminArea5Type\":\"City\",\"adminArea4Type\":\"County\",\"adminArea5\":\"Red Lion\",\"street\":\"\",\"adminArea1\":\"US\",\"adminArea3\":\"DE\",\"type\":\"s\",\"displayLatLng\":{\"lng\":-75.6642,\"lat\":39.608299},\"linkId\":0,\"postalCode\":\"\",\"sideOfStreet\":\"N\",\"dragPoint\":false,\"adminArea1Type\":\"Country\",\"geocodeQuality\":\"CITY\",\"geocodeQualityCode\":\"A5XAX\",\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-4,39.608299,-75.6642,0,0|&center=39.608299,-75.6642&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"},{\"latLng\":{\"lng\":-74.745003,\"lat\":39.8894},\"adminArea4\":\"Burlington County\",\"adminArea5Type\":\"City\",\"adminArea4Type\":\"County\",\"adminArea5\":\"Red Lion\",\"street\":\"\",\"adminArea1\":\"US\",\"adminArea3\":\"NJ\",\"type\":\"s\",\"displayLatLng\":{\"lng\":-74.745003,\"lat\":39.8894},\"linkId\":0,\"postalCode\":\"\",\"sideOfStreet\":\"N\",\"dragPoint\":false,\"adminArea1Type\":\"Country\",\"geocodeQuality\":\"CITY\",\"geocodeQualityCode\":\"A5XAX\",\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-5,39.8894,-74.745003,0,0|&center=39.8894,-74.745003&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"},{\"latLng\":{\"lng\":-74.470802,\"lat\":40.4436},\"adminArea4\":\"Middlesex County\",\"adminArea5Type\":\"City\",\"adminArea4Type\":\"County\",\"adminArea5\":\"Red Lion\",\"street\":\"\",\"adminArea1\":\"US\",\"adminArea3\":\"NJ\",\"type\":\"s\",\"displayLatLng\":{\"lng\":-74.470802,\"lat\":40.4436},\"linkId\":0,\"postalCode\":\"\",\"sideOfStreet\":\"N\",\"dragPoint\":false,\"adminArea1Type\":\"Country\",\"geocodeQuality\":\"CITY\",\"geocodeQualityCode\":\"A5XAX\",\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-6,40.4436,-74.470802,0,0|&center=40.4436,-74.470802&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"},{\"latLng\":{\"lng\":-75.616402,\"lat\":40.480598},\"adminArea4\":\"Berks County\",\"adminArea5Type\":\"City\",\"adminArea4Type\":\"County\",\"adminArea5\":\"Red Lion\",\"street\":\"\",\"adminArea1\":\"US\",\"adminArea3\":\"PA\",\"type\":\"s\",\"displayLatLng\":{\"lng\":-75.616402,\"lat\":40.480598},\"linkId\":0,\"postalCode\":\"\",\"sideOfStreet\":\"N\",\"dragPoint\":false,\"adminArea1Type\":\"Country\",\"geocodeQuality\":\"CITY\",\"geocodeQualityCode\":\"A5XAX\",\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-7,40.480598,-75.616402,0,0|&center=40.480598,-75.616402&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"},{\"latLng\":{\"lng\":-75.6819,\"lat\":39.878101},\"adminArea4\":\"Chester County\",\"adminArea5Type\":\"City\",\"adminArea4Type\":\"County\",\"adminArea5\":\"Red Lion\",\"street\":\"\",\"adminArea1\":\"US\",\"adminArea3\":\"PA\",\"type\":\"s\",\"displayLatLng\":{\"lng\":-75.6819,\"lat\":39.878101},\"linkId\":0,\"postalCode\":\"\",\"sideOfStreet\":\"N\",\"dragPoint\":false,\"adminArea1Type\":\"Country\",\"geocodeQuality\":\"CITY\",\"geocodeQualityCode\":\"A5XAX\",\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-8,39.878101,-75.6819,0,0|&center=39.878101,-75.6819&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"}],\"providedLocation\":{\"location\":\"Red Lion\"}},{\"locations\":[{\"latLng\":{\"lng\":-75.2925,\"lat\":39.9042},\"adminArea4\":\"Delaware County\",\"adminArea5Type\":\"City\",\"adminArea4Type\":\"County\",\"adminArea5\":\"Glenolden\",\"street\":\"\",\"adminArea1\":\"US\",\"adminArea3\":\"PA\",\"type\":\"s\",\"displayLatLng\":{\"lng\":-75.2925,\"lat\":39.9042},\"linkId\":0,\"postalCode\":\"19036\",\"sideOfStreet\":\"N\",\"dragPoint\":false,\"adminArea1Type\":\"Country\",\"geocodeQuality\":\"ZIP\",\"geocodeQualityCode\":\"Z1XAA\",\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-1,39.9042,-75.2925,0,0|&center=39.9042,-75.2925&zoom=9&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"}],\"providedLocation\":{\"location\":\"19036\"}},{\"locations\":[{\"latLng\":{\"lng\":-76.329999,\"lat\":40.0755},\"adminArea4\":\"\",\"adminArea5Type\":\"City\",\"adminArea4Type\":\"County\",\"adminArea5\":\"Lancaster\",\"street\":\"300 Granite Run Drive\",\"adminArea1\":\"US\",\"adminArea3\":\"PA\",\"type\":\"s\",\"displayLatLng\":{\"lng\":-76.329999,\"lat\":40.0755},\"linkId\":0,\"postalCode\":\"17601\",\"sideOfStreet\":\"N\",\"dragPoint\":false,\"adminArea1Type\":\"Country\",\"geocodeQuality\":\"ADDRESS\",\"geocodeQualityCode\":\"L1AAA\",\"mapUrl\":\"http://www.mapquestapi.com/staticmap/v3/getmap?type=map&size=225,160&pois=purple-1,40.0755,-76.329999,0,0|&center=40.0755,-76.329999&zoom=12&key=Fmjtd|luub296r2g,r0=o5-9680u6&rand=-1727257959\",\"adminArea3Type\":\"State\"}],\"providedLocation\":{\"location\":\"300 Granite Run Dr, Lancaster, PA\"}}],\"options\":{\"ignoreLatLngInput\":false,\"maxResults\":-1,\"thumbMaps\":true},\"info\":{\"copyright\":{\"text\":\"© 2012 MapQuest, Inc.\",\"imageUrl\":\"http://api.mqcdn.com/res/mqlogo.gif\",\"imageAltText\":\"© 2012 MapQuest, Inc.\"},\"statuscode\":0,\"messages\":[]}}",
+			"file": "public/js/controllers.js",
 			"settings":
 			{
-				"buffer_size": 7835,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "routes/api.js",
-			"settings":
-			{
-				"buffer_size": 3205,
+				"buffer_size": 5623,
 				"line_ending": "Unix"
 			}
 		}
@@ -304,16 +272,23 @@
 	},
 	"file_history":
 	[
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/controllers.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/app.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/app.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMoviesHoriz.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/plexApi.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/stateApi.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/routes/api.js",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/css/app.css",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/xbmcApi",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/models/remoteState.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/routes/index.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMovies.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/package.json",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/css/app.css",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVEpisodes.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVShows.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVSeasons.html",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMovies.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/index.html",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/controllers.js",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/app.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/views/partials/partial1.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/views/partials/partial2.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/package.json",
@@ -506,23 +481,23 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "routes/index.js",
+					"file": "views/index.html",
 					"settings":
 					{
-						"buffer_size": 197,
+						"buffer_size": 879,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								197,
-								197
+								340,
+								340
 							]
 						],
 						"settings":
@@ -530,36 +505,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app.js",
-					"settings":
-					{
-						"buffer_size": 1421,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1185,
-								1185
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -570,77 +516,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "models/remoteState.js",
-					"settings":
-					{
-						"buffer_size": 201,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								121,
-								121
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/js/app.js",
-					"settings":
-					{
-						"buffer_size": 1188,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								645,
-								645
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 1,
 					"file": "views/partials/PlexMovies.html",
 					"settings":
 					{
-						"buffer_size": 575,
+						"buffer_size": 303,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								568,
-								568
+								144,
+								144
 							]
 						],
 						"settings":
@@ -658,19 +546,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "package.json",
+					"buffer": 2,
+					"file": "views/partials/PlexMoviesHoriz.html",
 					"settings":
 					{
-						"buffer_size": 183,
+						"buffer_size": 224,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177,
-								177
+								215,
+								215
 							]
 						],
 						"settings":
@@ -678,7 +566,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -687,48 +575,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
+					"file": "public/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 7835,
+						"buffer_size": 5623,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								857,
-								857
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "routes/api.js",
-					"settings":
-					{
-						"buffer_size": 3205,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								532,
-								532
+								4683,
+								4683
 							]
 						],
 						"settings":
@@ -740,7 +599,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2517.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -5,7 +5,9 @@
 
 var express = require('express'),
   routes = require('./routes'),
-  api = require('./routes/api'),
+  plexApi = require('./api/plexApi'),
+  stateApi = require('./api/stateApi'),
+  xbmcApi = require('./api/xbmcApi'),
   mongoose = require('mongoose'),
   $ = require('jquery');
 
@@ -39,11 +41,17 @@ app.configure('production', function(){
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
 
-// JSON API
-app.get('/api/states', api.getStates);
-app.get('/api/state/:name', api.getState);
-app.get('/api/state/:name/:val', api.setState);
-app.get('/api/plex/movies/:serverIp/:sectionName/:pageNumber/:perPage', api.getPlexMovies);
+// State API
+app.get('/api/states', stateApi.getStates);
+app.get('/api/state/:name', stateApi.getState);
+app.get('/api/state/:name/:val', stateApi.setState);
+
+// Plex API
+app.get('/api/plex/movies/:serverIp/:sectionName/:pageNumber/:perPage', plexApi.getPlexMovies);
+app.get('/api/plex/tvshows/:serverIp/:sectionName/:pageNumber/:perPage', plexApi.getPlexTVShows);
+app.get('/api/plex/tvseasons/:serverIp/:ratingKey/:pageNumber/:perPage', plexApi.getPlexTVSeasons);
+
+// XBMC API
 
 // redirect all others to the index (HTML5 history)
 app.get('*', routes.index);

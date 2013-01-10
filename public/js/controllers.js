@@ -1,26 +1,6 @@
 'use strict';
 
 /* Controllers */
-
-//function AppCtrl($scope, $http) {
-//  $http({method: 'GET', url: '/api/name'}).
-//  success(function(data, status, headers, config) {
-//    $scope.name = data.name;
-//  }).
-//  error(function(data, status, headers, config) {
-//    $scope.name = 'Error!'
-//  });
-//}
-
-//function MyCtrl1() {}
-//MyCtrl1.$inject = [];
-
-
-//function MyCtrl2() {
-//}
-//MyCtrl2.$inject = [];
-
-
 function MovieListCtrl($scope, $rootScope, $routeParams) {
 	$scope.shouldStartNewRow = function (index) {
 		if (index % 5 == 0) {
@@ -35,6 +15,7 @@ function MovieListCtrl($scope, $rootScope, $routeParams) {
 	
 	$rootScope.serverIp = $routeParams["serverIp"];
 	$rootScope.playerIp = $routeParams["playerIp"];
+	$rootScope.playerType = $routeParams["playerType"];
 
 	$.ajax({
 		method: 'get',
@@ -61,6 +42,7 @@ function MovieListCtrl($scope, $rootScope, $routeParams) {
 									$scope.movies.push({
 										Name: $(this).attr('title'),
 										Thumb: $(this).attr('thumb'),
+										MetadataId: $(this).attr('ratingKey'),
 										PlayURL: playUrl
 									});
 								}
@@ -89,6 +71,7 @@ function TVShowListCtrl($scope, $rootScope, $routeParams) {
 
 	$rootScope.serverIp = $routeParams["serverIp"];
 	$rootScope.playerIp = $routeParams["playerIp"];
+	$rootScope.playerType = $routeParams["playerType"];
 	$rootScope.sectionName = $routeParams["sectionName"];
 
 	$.ajax({
@@ -198,6 +181,7 @@ function TVShowEpisodeListCtrl($scope, $rootScope, $routeParams) {
 					$scope.episodes.push({
 						Name: $(this).attr('title'),
 						Thumb: $(this).attr('thumb'),
+						MetadataId: $(this).attr('ratingKey'),
 						PlayURL: playUrl
 					});
 				}
@@ -208,15 +192,42 @@ function TVShowEpisodeListCtrl($scope, $rootScope, $routeParams) {
 	});	
 }
 
-function playMovie(playUrl, serverIp, playerIp) {
-	$.ajax({
-		method: 'get',
-		url: 'http://' + serverIp + ':32400/system/players/' + playerIp + '/application/playFile?path=http://' + serverIp + ':32400' + playUrl,
-		success: function() {
-			alert("Movie Started!");
-		},
-		error: function() {
-			alert("Error!");
-		}
-	});
+function playMovie(playUrl, metadataId, serverIp, playerIp, playerType) {
+	if (playerType.toLowerCase() == "plex") {
+		$.ajax({
+			method: 'get',
+			url: 'http://' + serverIp + ':32400/system/players/' + playerIp + '/application/playFile?path=http://' + serverIp + ':32400' + playUrl,
+			success: function() {
+				alert("Movie Started!");
+			},
+			error: function() {
+				alert("Error!");
+			}
+		});
+	}
+	else if (playerType.toLowerCase() == "plexbmc") {
+		// Work PleXBMC magic
+		var jsonPlay = {
+			"id":1,
+			"jsonrpc":"2.0",
+			"method":"Player.Open",
+			"params": {
+				"item": {
+					"file":"plugin:\/\/plugin.video.plexbmc\/?url=http://" + serverIp + ":32400/library/metadata/" + metadataId + "&mode=5&id=1"
+				}
+			}
+		};
+
+		$.ajax({
+			method: 'get',
+			url: 'http://' + playerIp + ':9090',
+			data: jsonPlay,
+			success: function() {
+				alert("Movie Started!");
+			},
+			error: function() {
+				alert("Error!");
+			}
+		});
+	}
 }
