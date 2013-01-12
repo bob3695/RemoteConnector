@@ -87,10 +87,16 @@ function TVShowListCtrl($scope, $rootScope, $routeParams) {
 							$scope.tvshows = [];
 
 							$(data).find('Directory').each(function() {
+								var viewed = "black";
+								if ($(this).attr('leafCount') > $(this).attr('viewedLeafCount')) {
+									viewed = "red";
+								}
+
 								$scope.tvshows.push({
 									Name: $(this).attr('title'),
 									Thumb: $(this).attr('thumb'),
-									RatingKey: $(this).attr('ratingKey')
+									RatingKey: $(this).attr('ratingKey'),
+									Viewed: viewed
 								});
 							});
 							
@@ -125,10 +131,17 @@ function TVShowSeasonListCtrl($scope, $rootScope, $routeParams) {
 
 			$(data).find('Directory').each(function() {
 				if ($(this).attr('title') != 'All episodes') {
+
+					var viewed = "black";
+					if ($(this).attr('leafCount') > $(this).attr('viewedLeafCount')) {
+						viewed = "red";
+					}
+
 					$scope.seasons.push({
 						Name: $(this).attr('title'),
 						Thumb: $(this).attr('thumb'),
-						Key: $(this).attr('ratingKey')
+						Key: $(this).attr('ratingKey'),
+						Viewed: viewed
 					});
 				}
 			});
@@ -177,12 +190,20 @@ function TVShowEpisodeListCtrl($scope, $rootScope, $routeParams) {
 					});
 				});
 
+				var viewed = "red";
+
+				if ($(this).attr('viewCount') != null) {
+					viewed = "black";
+				}
+
 				if (playUrl != undefined && playUrl != '') { // Sanity check to make sure we are not getting something we don't want
 					$scope.episodes.push({
 						Name: $(this).attr('title'),
 						Thumb: $(this).attr('thumb'),
 						MetadataId: $(this).attr('ratingKey'),
-						PlayURL: playUrl
+						PlayURL: playUrl,
+						AiredDate: $(this).attr('originallyAvailableAt'),
+						Viewed: viewed
 					});
 				}
 			});
@@ -207,21 +228,9 @@ function playMovie(playUrl, metadataId, serverIp, playerIp, playerType) {
 	}
 	else if (playerType.toLowerCase() == "plexbmc") {
 		// Work PleXBMC magic
-		var jsonPlay = {
-			"id":1,
-			"jsonrpc":"2.0",
-			"method":"Player.Open",
-			"params": {
-				"item": {
-					"file":"plugin:\/\/plugin.video.plexbmc\/?url=http://" + serverIp + ":32400/library/metadata/" + metadataId + "&mode=5&id=1"
-				}
-			}
-		};
-
 		$.ajax({
 			method: 'get',
-			url: 'http://' + playerIp + ':9090',
-			data: jsonPlay,
+			url: '/api/xbmc/plexbmc/play/' + serverIp + '/' + playerIp + '/' + metadataId,
 			success: function() {
 				alert("Movie Started!");
 			},

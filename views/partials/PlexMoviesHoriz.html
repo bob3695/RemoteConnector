@@ -1,7 +1,10 @@
 <table>
 	<tr>
+		<td><input type="text" ng-model="search" /></td>
+	</tr>
+	<tr>
 		<td ng-repeat="movie in movies | filter:search" valign="top" align="center">
-			<img src="http://{{serverIp}}:32400{{movie.Thumb}}" width="140" height="190">
+			<img src="http://{{serverIp}}:32400{{movie.Thumb}}" width="140" height="190" onclick="playMovie('{{movie.PlayURL}}', '{{movie.MetadataId}}', '{{serverIp}}', '{{playerIp}}', '{{playerType}}')">
 			<h5>{{movie.Name}}</h5>
 		</td>
 	</tr>

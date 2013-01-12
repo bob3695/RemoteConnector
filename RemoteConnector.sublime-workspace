@@ -124,34 +124,34 @@
 	"buffers":
 	[
 		{
-			"file": "views/index.html",
+			"file": "api/stateApi.js",
 			"settings":
 			{
-				"buffer_size": 879,
+				"buffer_size": 899,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/partials/PlexMovies.html",
+			"file": "views/partials/PlexTVEpisodes.html",
 			"settings":
 			{
-				"buffer_size": 303,
+				"buffer_size": 453,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/partials/PlexMoviesHoriz.html",
+			"file": "views/partials/PlexTVShows.html",
 			"settings":
 			{
-				"buffer_size": 224,
+				"buffer_size": 323,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/js/controllers.js",
+			"file": "views/partials/PlexTVSeasons.html",
 			"settings":
 			{
-				"buffer_size": 5623,
+				"buffer_size": 409,
 				"line_ending": "Unix"
 			}
 		}
@@ -272,23 +272,25 @@
 	},
 	"file_history":
 	[
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/controllers.js",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/app.js",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/app.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMovies.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMoviesHoriz.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/app.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/index.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/controllers.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/xbmcApi.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/lib/jquery.jsonrpc.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/app.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/plexApi.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/stateApi.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/routes/api.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/xbmcApi",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/models/remoteState.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/routes/index.js",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMovies.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/package.json",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/css/app.css",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVEpisodes.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVShows.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVSeasons.html",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/index.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/views/partials/partial1.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/views/partials/partial2.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/package.json",
@@ -481,23 +483,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "views/index.html",
+					"file": "api/stateApi.js",
 					"settings":
 					{
-						"buffer_size": 879,
+						"buffer_size": 899,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								340,
-								340
+								560,
+								560
 							]
 						],
 						"settings":
@@ -505,9 +507,8 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -517,18 +518,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "views/partials/PlexMovies.html",
+					"file": "views/partials/PlexTVEpisodes.html",
 					"settings":
 					{
-						"buffer_size": 303,
+						"buffer_size": 453,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								144,
-								144
+								186,
+								186
 							]
 						],
 						"settings":
@@ -547,18 +548,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "views/partials/PlexMoviesHoriz.html",
+					"file": "views/partials/PlexTVShows.html",
 					"settings":
 					{
-						"buffer_size": 224,
+						"buffer_size": 323,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								215,
-								215
+								299,
+								299
 							]
 						],
 						"settings":
@@ -566,7 +567,8 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -576,18 +578,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "public/js/controllers.js",
+					"file": "views/partials/PlexTVSeasons.html",
 					"settings":
 					{
-						"buffer_size": 5623,
+						"buffer_size": 409,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4683,
-								4683
+								385,
+								385
 							]
 						],
 						"settings":
@@ -595,11 +597,11 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2517.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

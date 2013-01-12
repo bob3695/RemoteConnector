@@ -6,9 +6,11 @@ angular.module('RemoteConnector', []).
 			when('/plex/movies/:serverIp/:playerIp/:sectionName/:playerType', {templateUrl: 'partials/PlexMovies.html', controller: MovieListCtrl}).
 			when('/plex/movies/horiz/:serverIp/:playerIp/:sectionName/:playerType', {templateUrl: 'partials/PlexMoviesHoriz.html', controller: MovieListCtrl}).
 			when('/plex/tvshows/:serverIp/:playerIp/:sectionName/:playerType', {templateUrl: 'partials/PlexTVShows.html', controller: TVShowListCtrl}).
+			when('/plex/tvshows/horiz/:serverIp/:playerIp/:sectionName/:playerType', {templateUrl: 'partials/PlexTVShowsHoriz.html', controller: TVShowListCtrl}).
 			when('/plex/tvshows/Seasons/:showKey/', {templateUrl: 'partials/PlexTVSeasons.html', controller: TVShowSeasonListCtrl}).
-			when('/plex/tvshows/Episodes/:seasonKey/', {templateUrl: 'partials/PlexTVEpisodes.html', controller: TVShowEpisodeListCtrl});
-		
+			when('/plex/tvshows/horizSeasons/:showKey/', {templateUrl: 'partials/PlexTVSeasonsHoriz.html', controller: TVShowSeasonListCtrl}).
+			when('/plex/tvshows/Episodes/:seasonKey/', {templateUrl: 'partials/PlexTVEpisodes.html', controller: TVShowEpisodeListCtrl}).
+			when('/plex/tvshows/horizEpisodes/:seasonKey/', {templateUrl: 'partials/PlexTVEpisodesHoriz.html', controller: TVShowEpisodeListCtrl});		
 	}]);
 
 

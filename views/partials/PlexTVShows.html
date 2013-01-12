@@ -1,19 +1,13 @@
-<div class="container-fluid">
-	<div class="row-fluid" align="center">
-		<div class="span12">
-			<input type="text" ng-model="search" class="input-medium search-query" />
-		</div>
-	</div>
-	<div class="row">
-		<div class="span12">
-			<ul class="thumbnails">
-				<li ng-repeat="show in tvshows | filter:search" class="span4">
-					<a class="thumbnail" href="#/plex/tvshows/Seasons/{{show.RatingKey}}">
-						<img src="http://{{serverIp}}:32400{{show.Thumb}}">
-						<h3>{{show.Name}}</h3>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
+<table>
+	<tr>
+		<td><input type="text" ng-model="search" /></td>
+	</tr>
+	<tr ng-repeat="show in tvshows | filter:search">
+		<td>
+			<a href="#/plex/tvshows/Seasons/{{show.RatingKey}}">
+				<img src="http://{{serverIp}}:32400{{show.Thumb}}" width="140" height="190">
+			</a>
+			<h5>{{show.Name}}</h5>
+		</td>
+	</tr>
+</table>

@@ -15,7 +15,7 @@ var app = module.exports = express();
 
 // Connect to the database!
 mongoose.connect('mongodb://localhost/RemoteConnector');
-mongoose.set('debug', true);
+//mongoose.set('debug', true);
 // Configuration
 
 app.configure(function(){
@@ -52,6 +52,7 @@ app.get('/api/plex/tvshows/:serverIp/:sectionName/:pageNumber/:perPage', plexApi
 app.get('/api/plex/tvseasons/:serverIp/:ratingKey/:pageNumber/:perPage', plexApi.getPlexTVSeasons);
 
 // XBMC API
+app.get('/api/xbmc/plexbmc/play/:serverIp/:playerIp/:metadataId', xbmcApi.playPleXBMC);
 
 // redirect all others to the index (HTML5 history)
 app.get('*', routes.index);

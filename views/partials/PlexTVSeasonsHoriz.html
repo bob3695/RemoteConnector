@@ -1,0 +1,15 @@
+<table>
+	<tr>
+		<td>
+			<input type="text" ng-model="search" /> <a href="#/plex/tvshows/horiz/{{serverIp}}/{{playerIp}}/{{sectionName}}/{{playerType}}">Back</a>
+		</td>
+	</tr>
+	<tr>
+		<td ng-repeat="season in seasons | filter:search" valign="top" align="center">
+			<a href="#/plex/tvshows/horizEpisodes/{{season.Key}}">
+				<img src="http://{{serverIp}}:32400{{season.Thumb}}" width="140" height="190">
+			</a>
+			<h5 style="color: {{season.Viewed}};">{{season.Name}}</h5>
+		</td>
+	</tr>
+</table>

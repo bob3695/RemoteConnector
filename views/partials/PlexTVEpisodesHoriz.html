@@ -1,11 +1,11 @@
 <table>
 	<tr>
 		<td>
-			<input type="text" ng-model="search" /> <a href="#/plex/tvshows/Seasons/{{showKey}}">Back</a>
+			<input type="text" ng-model="search" /> <a href="#/plex/tvshows/horizSeasons/{{showKey}}">Back</a>
 		</td>
 	</tr>
-	<tr ng-repeat="episode in episodes | filter:search">
-		<td>
+	<tr>
+		<td ng-repeat="episode in episodes | filter:search" valign="top" align="center">
 			<img src="http://{{serverIp}}:32400{{episode.Thumb}}" width="190" height="140" 
 				onclick="playMovie('{{episode.PlayURL}}', '{{episode.MetadataId}}', '{{serverIp}}', '{{playerIp}}', '{{playerType}}')">
 			<h5 style="color: {{episode.Viewed}};">{{episode.Name}}</h5>

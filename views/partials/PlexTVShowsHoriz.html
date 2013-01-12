@@ -1,0 +1,13 @@
+<table>
+	<tr>
+		<td><input type="text" ng-model="search" /></td>
+	</tr>
+	<tr>
+		<td ng-repeat="show in tvshows | filter:search" valign="top" align="center">
+			<a href="#/plex/tvshows/horizSeasons/{{show.RatingKey}}">
+				<img src="http://{{serverIp}}:32400{{show.Thumb}}" width="140" height="190">
+			</a>
+			<h5 style="color: {{show.Viewed}};">{{show.Name}}</h5>
+		</td>
+	</tr>
+</table>
