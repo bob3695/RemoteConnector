@@ -87,7 +87,7 @@ function TVShowListCtrl($scope, $rootScope, $routeParams) {
 							$scope.tvshows = [];
 
 							$(data).find('Directory').each(function() {
-								var viewed = "black";
+								var viewed = "white";
 								if ($(this).attr('leafCount') > $(this).attr('viewedLeafCount')) {
 									viewed = "red";
 								}
@@ -132,7 +132,7 @@ function TVShowSeasonListCtrl($scope, $rootScope, $routeParams) {
 			$(data).find('Directory').each(function() {
 				if ($(this).attr('title') != 'All episodes') {
 
-					var viewed = "black";
+					var viewed = "white";
 					if ($(this).attr('leafCount') > $(this).attr('viewedLeafCount')) {
 						viewed = "red";
 					}
@@ -193,7 +193,7 @@ function TVShowEpisodeListCtrl($scope, $rootScope, $routeParams) {
 				var viewed = "red";
 
 				if ($(this).attr('viewCount') != null) {
-					viewed = "black";
+					viewed = "white";
 				}
 
 				if (playUrl != undefined && playUrl != '') { // Sanity check to make sure we are not getting something we don't want
