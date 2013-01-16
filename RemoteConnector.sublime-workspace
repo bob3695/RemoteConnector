@@ -127,7 +127,7 @@
 			"file": "public/js/controllers.js",
 			"settings":
 			{
-				"buffer_size": 6272,
+				"buffer_size": 6377,
 				"line_ending": "Unix"
 			}
 		},
@@ -479,15 +479,15 @@
 					"file": "public/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 6272,
+						"buffer_size": 6377,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5793,
-								5793
+								3404,
+								3404
 							]
 						],
 						"settings":
@@ -499,7 +499,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2789.0,
+						"translation.y": 1454.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -516,8 +516,8 @@
 						"selection":
 						[
 							[
-								437,
-								437
+								197,
+								197
 							]
 						],
 						"settings":

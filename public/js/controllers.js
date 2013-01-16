@@ -88,7 +88,10 @@ function TVShowListCtrl($scope, $rootScope, $routeParams) {
 
 							$(data).find('Directory').each(function() {
 								var viewed = "white";
-								if ($(this).attr('leafCount') > $(this).attr('viewedLeafCount')) {
+								
+								var leafCount = parseInt($(this).attr('leafCount'), 10);
+								var viewedLeafCount = parseInt($(this).attr('viewedLeafCount'), 10);
+								if (leafCount > viewedLeafCount) {
 									viewed = "red";
 								}
 
@@ -133,7 +136,10 @@ function TVShowSeasonListCtrl($scope, $rootScope, $routeParams) {
 				if ($(this).attr('title') != 'All episodes') {
 
 					var viewed = "white";
-					if ($(this).attr('leafCount') > $(this).attr('viewedLeafCount')) {
+
+					var leafCount = parseInt($(this).attr('leafCount'), 10);
+					var viewedLeafCount = parseInt($(this).attr('viewedLeafCount'), 10);
+					if (leafCount > viewedLeafCount) {
 						viewed = "red";
 					}
 
