@@ -12,7 +12,7 @@ function MovieListCtrl($scope, $rootScope, $routeParams) {
 
 		return "no";
 	}
-	
+
 	$rootScope.serverIp = $routeParams["serverIp"];
 	$rootScope.playerIp = $routeParams["playerIp"];
 	$rootScope.playerType = $routeParams["playerType"];
@@ -214,15 +214,18 @@ function TVShowEpisodeListCtrl($scope, $rootScope, $routeParams) {
 }
 
 function playMovie(playUrl, metadataId, serverIp, playerIp, playerType) {
+	$.blockUI({fadeIn: 1000, fadeOut: 1000}); 
 	if (playerType.toLowerCase() == "plex") {
 		$.ajax({
 			method: 'get',
 			url: 'http://' + serverIp + ':32400/system/players/' + playerIp + '/application/playFile?path=http://' + serverIp + ':32400' + playUrl,
 			success: function() {
 				alert("Movie Started!");
+				$.unblockUI();
 			},
 			error: function() {
 				alert("Error!");
+				$.unblockUI();
 			}
 		});
 	}
@@ -233,9 +236,11 @@ function playMovie(playUrl, metadataId, serverIp, playerIp, playerType) {
 			url: '/api/xbmc/plexbmc/play/' + serverIp + '/' + playerIp + '/' + metadataId,
 			success: function() {
 				alert("Movie Started!");
+				$.unblockUI();
 			},
 			error: function() {
 				alert("Error!");
+				$.unblockUI();
 			}
 		});
 	}

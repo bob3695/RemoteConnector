@@ -2,6 +2,10 @@ var net = require('net');
 
 exports.playPleXBMC = function(req, res) {
 	var client = new net.Socket();
+	client.setTimeout(2000, function() {
+		console.log("Time out!");
+		res.send("Timed out", 500);
+	});
 	
 	client.connect(9090, req.params.playerIp, function() {
 		client.write('{"id":1,"jsonrpc":"2.0","method":"Player.Open","params":{"item":{"file":"plugin:\/\/plugin.video.plexbmc\/?url=http://' + 
@@ -11,6 +15,7 @@ exports.playPleXBMC = function(req, res) {
 	});
 
 	client.on('error', function(data) {
+		console.log(data);
 		res.send("Error", 500);
 	});
 }

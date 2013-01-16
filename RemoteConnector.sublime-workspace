@@ -124,109 +124,18 @@
 	"buffers":
 	[
 		{
-			"file": "api/stateApi.js",
-			"settings":
-			{
-				"buffer_size": 899,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/partials/PlexTVEpisodes.html",
-			"settings":
-			{
-				"buffer_size": 528,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/partials/PlexTVEpisodesHoriz.html",
-			"settings":
-			{
-				"buffer_size": 561,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/partials/PlexTVShows.html",
-			"settings":
-			{
-				"buffer_size": 323,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/partials/PlexTVSeasonsHoriz.html",
-			"settings":
-			{
-				"buffer_size": 497,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/partials/PlexTVShowsHoriz.html",
-			"settings":
-			{
-				"buffer_size": 388,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/partials/PlexTVSeasons.html",
-			"settings":
-			{
-				"buffer_size": 409,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/app.js",
-			"settings":
-			{
-				"buffer_size": 1791,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "public/js/controllers.js",
 			"settings":
 			{
-				"buffer_size": 5889,
+				"buffer_size": 6008,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/partials/PlexMovies.html",
+			"file": "api/xbmcApi.js",
 			"settings":
 			{
-				"buffer_size": 375,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app.js",
-			"settings":
-			{
-				"buffer_size": 1838,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "/* app css stylesheet */\nbody\n{\n	\n}",
-			"file": "public/css/app.css",
-			"file_size": 76,
-			"file_write_time": 1358026021000000,
-			"settings":
-			{
-				"buffer_size": 35,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/index.html",
-			"settings":
-			{
-				"buffer_size": 994,
+				"buffer_size": 628,
 				"line_ending": "Unix"
 			}
 		}
@@ -347,25 +256,29 @@
 	},
 	"file_history":
 	[
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMovies.html",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMoviesHoriz.html",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/app.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/index.html",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/controllers.js",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/xbmcApi.js",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/lib/jquery.jsonrpc.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/lib/jquery.blockUI.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVSeasonsHoriz.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVShows.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVShowsHoriz.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVSeasons.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/app.js",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/plexApi.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/controllers.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMovies.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/app.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/css/app.css",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/xbmcApi.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVEpisodesHoriz.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVEpisodes.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/stateApi.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexMoviesHoriz.html",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/js/lib/jquery.jsonrpc.js",
+		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/plexApi.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/routes/api.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/api/xbmcApi",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/models/remoteState.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/routes/index.js",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/package.json",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/public/css/app.css",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVEpisodes.html",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVShows.html",
-		"/Users/Rich/Desktop/Development/Personal Projects/Web/RemoteConnector/views/partials/PlexTVSeasons.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/views/partials/partial1.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/views/partials/partial2.html",
 		"/Users/Rich/Desktop/Development/Personal Projects/Web/btford-angular-express-seed-3f92e78/package.json",
@@ -558,23 +471,23 @@
 	"groups":
 	[
 		{
-			"selected": 12,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "api/stateApi.js",
+					"file": "public/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 899,
+						"buffer_size": 6008,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								560,
-								560
+								1230,
+								1230
 							]
 						],
 						"settings":
@@ -586,205 +499,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 43.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "views/partials/PlexTVEpisodes.html",
+					"file": "api/xbmcApi.js",
 					"settings":
 					{
-						"buffer_size": 528,
+						"buffer_size": 628,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								463,
-								463
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "views/partials/PlexTVEpisodesHoriz.html",
-					"settings":
-					{
-						"buffer_size": 561,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								496,
-								496
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "views/partials/PlexTVShows.html",
-					"settings":
-					{
-						"buffer_size": 323,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								298,
-								298
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "views/partials/PlexTVSeasonsHoriz.html",
-					"settings":
-					{
-						"buffer_size": 497,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								472,
-								472
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "views/partials/PlexTVShowsHoriz.html",
-					"settings":
-					{
-						"buffer_size": 388,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								363,
-								363
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "views/partials/PlexTVSeasons.html",
-					"settings":
-					{
-						"buffer_size": 409,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								384,
-								384
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "public/js/app.js",
-					"settings":
-					{
-						"buffer_size": 1791,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								457,
-								457
+								437,
+								437
 							]
 						],
 						"settings":
@@ -794,156 +527,6 @@
 							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "public/js/controllers.js",
-					"settings":
-					{
-						"buffer_size": 5889,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4745,
-								4745
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2274.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "views/partials/PlexMovies.html",
-					"settings":
-					{
-						"buffer_size": 375,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								350,
-								350
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app.js",
-					"settings":
-					{
-						"buffer_size": 1838,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								342,
-								342
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "public/css/app.css",
-					"settings":
-					{
-						"buffer_size": 35,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33,
-								33
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "views/index.html",
-					"settings":
-					{
-						"buffer_size": 994,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								338,
-								338
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
