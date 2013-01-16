@@ -2,7 +2,7 @@ var net = require('net');
 
 exports.playPleXBMC = function(req, res) {
 	var client = new net.Socket();
-	client.setTimeout(2000, function() {
+	client.setTimeout(5000, function() {
 		console.log("Time out!");
 		res.send("Timed out", 500);
 	});

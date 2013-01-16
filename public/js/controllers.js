@@ -220,12 +220,14 @@ function playMovie(playUrl, metadataId, serverIp, playerIp, playerType) {
 			method: 'get',
 			url: 'http://' + serverIp + ':32400/system/players/' + playerIp + '/application/playFile?path=http://' + serverIp + ':32400' + playUrl,
 			success: function() {
-				alert("Movie Started!");
+				//alert("Movie Started!");
 				$.unblockUI();
+				$.blockUI({timeout: 2000, message: "<h1>Movie Started!</h1>"});
 			},
 			error: function() {
-				alert("Error!");
+				//alert("Error!");
 				$.unblockUI();
+				$.blockUI({timeout: 2000, message: "<h1>Error!</h1>"});
 			}
 		});
 	}
@@ -235,12 +237,14 @@ function playMovie(playUrl, metadataId, serverIp, playerIp, playerType) {
 			method: 'get',
 			url: '/api/xbmc/plexbmc/play/' + serverIp + '/' + playerIp + '/' + metadataId,
 			success: function() {
-				alert("Movie Started!");
+				//alert("Movie Started!");
 				$.unblockUI();
+				$.blockUI({timeout: 2000, message: "<h1>Movie Started!</h1>"});
 			},
 			error: function() {
-				alert("Error!");
+				//alert("Error!");
 				$.unblockUI();
+				$.blockUI({timeout: 2000, message: "<h1>Error!</h1>"});
 			}
 		});
 	}
