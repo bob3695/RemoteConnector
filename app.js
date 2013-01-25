@@ -15,8 +15,8 @@ var app = module.exports = express();
 // Connect to the database!
 mongoose.connect('mongodb://localhost/RemoteConnector');
 //mongoose.set('debug', true);
-// Configuration
 
+// Configuration
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.engine('.html', require('ejs').renderFile);
