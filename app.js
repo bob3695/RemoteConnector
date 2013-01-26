@@ -12,8 +12,16 @@ var express = require('express'),
 
 var app = module.exports = express();
 
+var isBuildOnly = false;
+
+process.argv.forEach(function (val, index, array) {
+  if (val == "build")
+    isBuildOnly = true;
+});
+
 // Connect to the database!
-mongoose.connect('mongodb://localhost/RemoteConnector');
+if (!isBuildOnly)
+  mongoose.connect('mongodb://localhost/RemoteConnector');
 //mongoose.set('debug', true);
 
 // Configuration
@@ -56,6 +64,8 @@ app.get('/api/xbmc/plexbmc/play/:serverIp/:playerIp/:metadataId', xbmcApi.playPl
 app.get('*', routes.index);
 
 // Start server
-app.listen(3001, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+if (!isBuildOnly) {
+  app.listen(3001, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
+}
